@@ -1,0 +1,18 @@
+'''
+Raspi relay contrl step
+'''
+>>sudo apt-get install git
+>>git clone git://git.drogon.net/wiringPi
+>>cd wiringPi
+>>./build
+>>gpio -v
+# set
+gpio -g mode 23 out
+gpio -g mode 24 out
+
+# control
+gpio -g write 23 1
+gpio -g write 23 0
+
+gpio -g write 24 1
+gpio -g write 24 0
